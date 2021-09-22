@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/anton/Documents/Proyectos-universidad/AEED/TADS/PILA_GENERICA/PILA.h
+cassert
+-
+iostream
+-
+
+C:/Users/anton/Documents/Proyectos-universidad/AEED/TADS/PILA_GENERICA/main.cpp
+iostream
+-
+PILA.h
+C:/Users/anton/Documents/Proyectos-universidad/AEED/TADS/PILA_GENERICA/PILA.h
+

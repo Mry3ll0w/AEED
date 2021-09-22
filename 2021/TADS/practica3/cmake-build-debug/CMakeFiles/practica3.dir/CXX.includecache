@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/anton/Documents/Proyectos-universidad/AEED/TADS/practica3/main.cpp
+racional.h
+C:/Users/anton/Documents/Proyectos-universidad/AEED/TADS/practica3/racional.h
+polinomio.h
+C:/Users/anton/Documents/Proyectos-universidad/AEED/TADS/practica3/polinomio.h
+
+C:/Users/anton/Documents/Proyectos-universidad/AEED/TADS/practica3/polinomio.h
+iostream
+-
+cassert
+-
+
+C:/Users/anton/Documents/Proyectos-universidad/AEED/TADS/practica3/racional.h
+iostream
+-
+cassert
+-
+

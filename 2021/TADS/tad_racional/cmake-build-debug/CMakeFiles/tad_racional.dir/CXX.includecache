@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/anton/Documents/Proyectos-universidad/AEED/TADS/tad_racional/racional.cpp
+racional.h
+C:/Users/anton/Documents/Proyectos-universidad/AEED/TADS/tad_racional/racional.h
+
+C:/Users/anton/Documents/Proyectos-universidad/AEED/TADS/tad_racional/racional.h
+iostream
+-
+cassert
+-
+

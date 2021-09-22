@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\tad_pila_libros.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\tad_pila_libros.dir/objects.a @CMakeFiles\tad_pila_libros.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\tad_pila_libros.dir/objects.a -Wl,--no-whole-archive  -o tad_pila_libros.exe -Wl,--out-implib,libtad_pila_libros.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\tad_pila_libros.dir\linklibs.rsp

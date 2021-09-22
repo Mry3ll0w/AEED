@@ -1,0 +1,3 @@
+D:/Proyectos/Proyectos-universidad/AEED/TADS/Practica 6/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/Proyectos/Proyectos-universidad/AEED/TADS/Practica 6/cmake-build-debug/CMakeFiles/Practica_6.dir
+D:/Proyectos/Proyectos-universidad/AEED/TADS/Practica 6/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="COLA_Generica" targetName="COLA_Generica" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c37a398d-4252-405b-915b-7332cd59869f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/COLA_Generica.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/COLA.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PRACTICA4/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../PRACTICA4/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../IP/ej_entre.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../../IP/ej_entre.c" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1kp9vPY7Razia0AXQnGgtHRpGot" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager">
+    <configuration name="COLA_Generica" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="COLA_Generica" TARGET_NAME="COLA_Generica" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="COLA_Generica" RUN_TARGET_NAME="COLA_Generica">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c37a398d-4252-405b-915b-7332cd59869f" name="Default Changelist" comment="" />
+      <created>1606386895576</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606386895576</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2469" y="187" key="FileChooserDialogImpl" timestamp="1606391303085">
+      <screen x="1920" y="0" width="1536" height="864" />
+    </state>
+    <state x="2469" y="187" key="FileChooserDialogImpl/0.0.1280.720/1920.0.1536.864@1920.0.1536.864" timestamp="1606391303085" />
+    <state width="1493" height="217" key="GridCell.Tab.0.bottom" timestamp="1606407696472">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="269" key="GridCell.Tab.0.bottom/0.0.1280.720/1920.0.1536.864@1920.0.1536.864" timestamp="1606391304497" />
+    <state width="1493" height="217" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1606407696472" />
+    <state width="1493" height="217" key="GridCell.Tab.0.center" timestamp="1606407696472">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="269" key="GridCell.Tab.0.center/0.0.1280.720/1920.0.1536.864@1920.0.1536.864" timestamp="1606391304497" />
+    <state width="1493" height="217" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1606407696472" />
+    <state width="1493" height="217" key="GridCell.Tab.0.left" timestamp="1606407696472">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="269" key="GridCell.Tab.0.left/0.0.1280.720/1920.0.1536.864@1920.0.1536.864" timestamp="1606391304496" />
+    <state width="1493" height="217" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1606407696472" />
+    <state width="1493" height="217" key="GridCell.Tab.0.right" timestamp="1606407696472">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="269" key="GridCell.Tab.0.right/0.0.1280.720/1920.0.1536.864@1920.0.1536.864" timestamp="1606391304497" />
+    <state width="1493" height="217" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1606407696472" />
+    <state width="1493" height="269" key="GridCell.Tab.1.bottom" timestamp="1606391304497">
+      <screen x="1920" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="269" key="GridCell.Tab.1.bottom/0.0.1280.720/1920.0.1536.864@1920.0.1536.864" timestamp="1606391304497" />
+    <state width="1493" height="269" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1606389730848" />
+    <state width="1493" height="269" key="GridCell.Tab.1.center" timestamp="1606391304497">
+      <screen x="1920" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="269" key="GridCell.Tab.1.center/0.0.1280.720/1920.0.1536.864@1920.0.1536.864" timestamp="1606391304497" />
+    <state width="1493" height="269" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1606389730847" />
+    <state width="1493" height="269" key="GridCell.Tab.1.left" timestamp="1606391304497">
+      <screen x="1920" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="269" key="GridCell.Tab.1.left/0.0.1280.720/1920.0.1536.864@1920.0.1536.864" timestamp="1606391304497" />
+    <state width="1493" height="269" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1606389730847" />
+    <state width="1493" height="269" key="GridCell.Tab.1.right" timestamp="1606391304497">
+      <screen x="1920" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="269" key="GridCell.Tab.1.right/0.0.1280.720/1920.0.1536.864@1920.0.1536.864" timestamp="1606391304497" />
+    <state width="1493" height="269" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1606389730847" />
+  </component>
+</project>

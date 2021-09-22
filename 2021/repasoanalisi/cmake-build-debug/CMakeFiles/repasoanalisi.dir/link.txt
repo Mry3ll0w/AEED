@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/repasoanalisi.dir/cronometrado.cpp.o CMakeFiles/repasoanalisi.dir/ordenes.cpp.o  -o repasoanalisi 

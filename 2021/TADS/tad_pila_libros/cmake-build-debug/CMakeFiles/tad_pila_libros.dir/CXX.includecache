@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/anton/Documents/Proyectos-universidad/AEED/TADS/tad_pila_libros/libro_pila.cpp
+libro_pila.h
+C:/Users/anton/Documents/Proyectos-universidad/AEED/TADS/tad_pila_libros/libro_pila.h
+
+C:/Users/anton/Documents/Proyectos-universidad/AEED/TADS/tad_pila_libros/libro_pila.h
+iostream
+-
+iostream
+-
+cassert
+-
+
