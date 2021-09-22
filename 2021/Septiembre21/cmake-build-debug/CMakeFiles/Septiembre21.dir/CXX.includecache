@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Proyectos/Proyectos-universidad/AEED/Septiembre21/examenes/consultorio.h
+../tads p/ListaEnla.h
+D:/Proyectos/Proyectos-universidad/AEED/Septiembre21/tads p/ListaEnla.h
+../tads p/Cola_Din.h
+D:/Proyectos/Proyectos-universidad/AEED/Septiembre21/tads p/Cola_Din.h
+string
+-
+
+D:/Proyectos/Proyectos-universidad/AEED/Septiembre21/examenes/hipermercado.h
+iostream
+-
+string
+-
+
+D:/Proyectos/Proyectos-universidad/AEED/Septiembre21/main.cpp
+iostream
+-
+examenes/consultorio.h
+D:/Proyectos/Proyectos-universidad/AEED/Septiembre21/examenes/consultorio.h
+tads p/ListaEnla.h
+D:/Proyectos/Proyectos-universidad/AEED/Septiembre21/tads p/ListaEnla.h
+examenes/hipermercado.h
+D:/Proyectos/Proyectos-universidad/AEED/Septiembre21/examenes/hipermercado.h
+
+D:/Proyectos/Proyectos-universidad/AEED/Septiembre21/tads p/Cola_Din.h
+cassert
+-
+iostream
+-
+
+D:/Proyectos/Proyectos-universidad/AEED/Septiembre21/tads p/ListaEnla.h
+cassert
+-
+

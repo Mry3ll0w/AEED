@@ -1,0 +1,3 @@
+D:/Proyectos/Proyectos-universidad/AEED/Examenes/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/Proyectos/Proyectos-universidad/AEED/Examenes/cmake-build-debug/CMakeFiles/Examenes.dir
+D:/Proyectos/Proyectos-universidad/AEED/Examenes/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -1,0 +1,3 @@
+C:/Users/anton/Documents/Proyectos-universidad/AEED/TADS/tad_pila_libros/cmake-build-debug/CMakeFiles/tad_pila_libros.dir
+C:/Users/anton/Documents/Proyectos-universidad/AEED/TADS/tad_pila_libros/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/anton/Documents/Proyectos-universidad/AEED/TADS/tad_pila_libros/cmake-build-debug/CMakeFiles/rebuild_cache.dir

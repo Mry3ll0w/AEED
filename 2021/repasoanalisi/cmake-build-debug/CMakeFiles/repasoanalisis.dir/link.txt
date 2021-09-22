@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/repasoanalisis.dir/p1_manejor_rand.cpp.o  -o repasoanalisis 

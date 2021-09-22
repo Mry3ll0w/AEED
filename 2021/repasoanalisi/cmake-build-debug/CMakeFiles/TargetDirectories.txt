@@ -1,0 +1,3 @@
+/home/ara/Documentos/AEED/clion/repasoanalisi/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/ara/Documentos/AEED/clion/repasoanalisi/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/ara/Documentos/AEED/clion/repasoanalisi/cmake-build-debug/CMakeFiles/repasoanalisis.dir

@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/anton/Documents/Proyectos-universidad/AEED/TADS/PRACTICA4/PILA.h
+cassert
+-
+iostream
+-
+
+C:/Users/anton/Documents/Proyectos-universidad/AEED/TADS/PRACTICA4/main.cpp
+iostream
+-
+PILA.h
+C:/Users/anton/Documents/Proyectos-universidad/AEED/TADS/PRACTICA4/PILA.h
+pila_enla.h
+C:/Users/anton/Documents/Proyectos-universidad/AEED/TADS/PRACTICA4/pila_enla.h
+cstring
+-
+string
+-
+fstream
+-
+algorithm
+-
+
+C:/Users/anton/Documents/Proyectos-universidad/AEED/TADS/PRACTICA4/pila_enla.h
+cassert
+-
+iostream
+-
+
