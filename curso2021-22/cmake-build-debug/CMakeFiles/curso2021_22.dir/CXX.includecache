@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/main.cpp
+iostream
+-
+p2_cronometro.hpp
+C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/p2_cronometro.hpp
+
+C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/p2_cronometro.hpp
+iostream
+-
+tads_profesorado/cronometro.h
+C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/tads_profesorado/cronometro.h
+tads_profesorado/ordenacion.h
+C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/tads_profesorado/ordenacion.h
+cmath
+-
+algorithm
+-
+list
+-
+map
+-
+
+C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/tads_profesorado/cronometro.h
+ctime
+-
+
+C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/tads_profesorado/ordenacion.h
+
