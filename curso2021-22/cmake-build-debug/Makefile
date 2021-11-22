@@ -152,6 +152,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\curso2021_22.dir\build.make CMakeFiles/curso2021_22.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+p3.obj: p3.cpp.obj
+.PHONY : p3.obj
+
+# target to build an object file
+p3.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\curso2021_22.dir\build.make CMakeFiles/curso2021_22.dir/p3.cpp.obj
+.PHONY : p3.cpp.obj
+
+p3.i: p3.cpp.i
+.PHONY : p3.i
+
+# target to preprocess a source file
+p3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\curso2021_22.dir\build.make CMakeFiles/curso2021_22.dir/p3.cpp.i
+.PHONY : p3.cpp.i
+
+p3.s: p3.cpp.s
+.PHONY : p3.s
+
+# target to generate assembly for a file
+p3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\curso2021_22.dir\build.make CMakeFiles/curso2021_22.dir/p3.cpp.s
+.PHONY : p3.cpp.s
+
 tads_profesorado/ordenacion.obj: tads_profesorado/ordenacion.cpp.obj
 .PHONY : tads_profesorado/ordenacion.obj
 
@@ -188,6 +212,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... p3.obj
+	@echo ... p3.i
+	@echo ... p3.s
 	@echo ... tads_profesorado/ordenacion.obj
 	@echo ... tads_profesorado/ordenacion.i
 	@echo ... tads_profesorado/ordenacion.s
