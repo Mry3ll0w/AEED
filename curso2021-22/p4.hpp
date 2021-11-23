@@ -1,7 +1,7 @@
 #include "tads_profesorado/pila_enla.h"
 #include "tads_profesorado/pila_vec.h"
 #include <iostream>
-<<<<<<< HEAD
+
 #include <string>
 #include <cassert>
 /*
@@ -99,5 +99,3 @@ bool ej2_p4(const string & input){
     //Comprobamos que la totalidad de la cadena es correcta
     return correcta;
 }
-=======
->>>>>>> main
