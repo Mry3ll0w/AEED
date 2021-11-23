@@ -10,6 +10,7 @@ D:/Proyectos/AEED-/curso2021-22/main.cpp
 iostream
 -
 p3.hpp
+<<<<<<< HEAD
 D:/Proyectos/AEED-/curso2021-22/p3.hpp
 p4.hpp
 D:/Proyectos/AEED-/curso2021-22/p4.hpp
@@ -30,10 +31,23 @@ D:/Proyectos/AEED-/curso2021-22/tads_profesorado/pila_vec.h
 iostream
 -
 string
+=======
+C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/p3.hpp
+
+C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/p3.cpp
+p3.hpp
+C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/p3.hpp
+
+C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/p3.hpp
+iostream
+-
+vector
+>>>>>>> main
 -
 cassert
 -
 
+<<<<<<< HEAD
 D:/Proyectos/AEED-/curso2021-22/tads_profesorado/pila_enla.h
 cassert
 -
@@ -44,3 +58,5 @@ D:/Proyectos/AEED-/curso2021-22/tads_profesorado/pila_vec.h
 cassert
 -
 
+=======
+>>>>>>> main
