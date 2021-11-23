@@ -6,31 +6,41 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/main.cpp
+D:/Proyectos/AEED-/curso2021-22/main.cpp
 iostream
 -
-p2_cronometro.hpp
-C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/p2_cronometro.hpp
+p3.hpp
+D:/Proyectos/AEED-/curso2021-22/p3.hpp
+p4.hpp
+D:/Proyectos/AEED-/curso2021-22/p4.hpp
 
-C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/p2_cronometro.hpp
+D:/Proyectos/AEED-/curso2021-22/p3.hpp
 iostream
 -
-tads_profesorado/cronometro.h
-C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/tads_profesorado/cronometro.h
-tads_profesorado/ordenacion.h
-C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/tads_profesorado/ordenacion.h
-cmath
+vector
 -
-algorithm
--
-list
--
-map
+cassert
 -
 
-C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/tads_profesorado/cronometro.h
-ctime
+D:/Proyectos/AEED-/curso2021-22/p4.hpp
+tads_profesorado/pila_enla.h
+D:/Proyectos/AEED-/curso2021-22/tads_profesorado/pila_enla.h
+tads_profesorado/pila_vec.h
+D:/Proyectos/AEED-/curso2021-22/tads_profesorado/pila_vec.h
+iostream
+-
+string
+-
+cassert
 -
 
-C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/tads_profesorado/ordenacion.h
+D:/Proyectos/AEED-/curso2021-22/tads_profesorado/pila_enla.h
+cassert
+-
+iostream
+-
+
+D:/Proyectos/AEED-/curso2021-22/tads_profesorado/pila_vec.h
+cassert
+-
 

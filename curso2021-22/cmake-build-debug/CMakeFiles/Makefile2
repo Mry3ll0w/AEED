@@ -44,19 +44,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\anton\OneDrive\Escritorio\AEED\curso2021-22
+CMAKE_SOURCE_DIR = D:\Proyectos\AEED-\curso2021-22
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\anton\OneDrive\Escritorio\AEED\curso2021-22\cmake-build-debug
+CMAKE_BINARY_DIR = D:\Proyectos\AEED-\curso2021-22\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -80,14 +80,14 @@ clean: CMakeFiles/curso2021_22.dir/clean
 CMakeFiles/curso2021_22.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\curso2021_22.dir\build.make CMakeFiles/curso2021_22.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\curso2021_22.dir\build.make CMakeFiles/curso2021_22.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\anton\OneDrive\Escritorio\AEED\curso2021-22\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target curso2021_22"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Proyectos\AEED-\curso2021-22\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4 "Built target curso2021_22"
 .PHONY : CMakeFiles/curso2021_22.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/curso2021_22.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\anton\OneDrive\Escritorio\AEED\curso2021-22\cmake-build-debug\CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Proyectos\AEED-\curso2021-22\cmake-build-debug\CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/curso2021_22.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\anton\OneDrive\Escritorio\AEED\curso2021-22\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Proyectos\AEED-\curso2021-22\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/curso2021_22.dir/rule
 
 # Convenience name for target.

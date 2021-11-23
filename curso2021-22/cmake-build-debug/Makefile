@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\anton\OneDrive\Escritorio\AEED\curso2021-22
+CMAKE_SOURCE_DIR = D:\Proyectos\AEED-\curso2021-22
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\anton\OneDrive\Escritorio\AEED\curso2021-22\cmake-build-debug
+CMAKE_BINARY_DIR = D:\Proyectos\AEED-\curso2021-22\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\anton\OneDrive\Escritorio\AEED\curso2021-22\cmake-bu
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\anton\OneDrive\Escritorio\AEED\curso2021-22\cmake-build-debug\CMakeFiles C:\Users\anton\OneDrive\Escritorio\AEED\curso2021-22\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Proyectos\AEED-\curso2021-22\cmake-build-debug\CMakeFiles D:\Proyectos\AEED-\curso2021-22\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\anton\OneDrive\Escritorio\AEED\curso2021-22\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Proyectos\AEED-\curso2021-22\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -152,6 +152,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\curso2021_22.dir\build.make CMakeFiles/curso2021_22.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+p3.obj: p3.cpp.obj
+.PHONY : p3.obj
+
+# target to build an object file
+p3.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\curso2021_22.dir\build.make CMakeFiles/curso2021_22.dir/p3.cpp.obj
+.PHONY : p3.cpp.obj
+
+p3.i: p3.cpp.i
+.PHONY : p3.i
+
+# target to preprocess a source file
+p3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\curso2021_22.dir\build.make CMakeFiles/curso2021_22.dir/p3.cpp.i
+.PHONY : p3.cpp.i
+
+p3.s: p3.cpp.s
+.PHONY : p3.s
+
+# target to generate assembly for a file
+p3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\curso2021_22.dir\build.make CMakeFiles/curso2021_22.dir/p3.cpp.s
+.PHONY : p3.cpp.s
+
 tads_profesorado/ordenacion.obj: tads_profesorado/ordenacion.cpp.obj
 .PHONY : tads_profesorado/ordenacion.obj
 
@@ -188,6 +212,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... p3.obj
+	@echo ... p3.i
+	@echo ... p3.s
 	@echo ... tads_profesorado/ordenacion.obj
 	@echo ... tads_profesorado/ordenacion.i
 	@echo ... tads_profesorado/ordenacion.s
