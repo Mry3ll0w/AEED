@@ -142,6 +142,7 @@ bool ej2_p4(const string & input){
      const std::string texto_getter()const;
      void increment_cursor();
      void decrement_cursor();
+     char disp_cursor();
      void erase_cursor();
      void erase_previous_cursor();
      void cursor_end();
@@ -183,7 +184,8 @@ const std::string linea_texto::texto_getter() const{
 //Postcondicion==> Incrementa el cursor
 void linea_texto::increment_cursor() {
 assert(!t.vacia());
-assert(cursor < texto_getter().size());
+assert(cursor < texto_getter().size() );
+assert(texto_getter().size()-(cursor+1) > 0);//Si la resta es menor que 0 al hacer pop se saldria de la pila
     // e p e p l E
     // ^
     ++cursor;
@@ -193,8 +195,122 @@ assert(cursor < texto_getter().size());
 //Postcondicion==> Incrementa el cursor
 void linea_texto::decrement_cursor() {
     assert(!t.vacia());
-    assert(cursor < 0);
+    assert(cursor > 0);
     --cursor;
+}
+
+//Muestra el caracter al cual apunta el cursor
+char linea_texto::disp_cursor() {
+    PilaEnla<char> temp = t;
+    size_t cont = 0;
+    while (cont < cursor){
+        temp.pop();
+        cont++;
+    }
+
+    std::cout<<temp.tope()<<std::endl;
+return temp.tope();
+}
+
+
+//Precondicion==> La pila no puede estar vacia
+//Postcondicion ==> elimina el caracter en la posicion del cursor
+void linea_texto::erase_cursor() {
+    assert(!t.vacia());//La pila no puede estar vacia , y en consecuencia el cursor tiene que ser > 0
+    assert(cursor >= 0);//Cursor mayor que 0
+
+    if(cursor == 0){//Si solo hay un elemento en la pila simplemente sacamos de la misma el tope
+        t.pop();
+        cursor=-1;//Cuando esta vacio, esta debe apuntar a -1
+
+    }
+    else{
+
+        PilaEnla<char> parser_stack;//Nos servira para ir guardar temporalmente el contenido de p
+        int cont = 0;//Iterador
+
+        while (cont < cursor){
+            parser_stack.push(t.tope());//Metemos los datos que no queremos
+            t.pop();
+            ++cont;
+        }
+
+        //Ya t esta en la posicion del cursor, por tanto simplemente hacemos un pop y metemos el resto en t
+        t.pop();
+        //Copiamos los caracter anteriores al cursor que estan en parser_stack
+        while (!parser_stack.vacia()){
+            t.push(parser_stack.tope());
+            parser_stack.pop();
+        }
+
+    }
+
+
+
+}
+
+//Precondicion==> El cursor no puede estar en la posicion primera (cursor>0), la pila no puede estar vacia
+//Postcondicion==> Elimina el caracter anterior al cursor
+void linea_texto::erase_previous_cursor() {
+    assert(cursor >= 1);
+    assert(!t.vacia());
+    if (cursor == 1){// si el cursor esta en la segunda posicion, simplemente sacamos la anterior con pop
+        cursor --;
+        t.pop();
+    }
+    else{//Cursor esta en posicion >= 2
+
+        cursor --;
+        erase_cursor();
+        std::cout<<t<<std::endl;
+    }
+
+}
+
+//Post==>Mueve el cursor hasta el final del texto
+void linea_texto::cursor_end() {
+    if (t.vacia())
+        cursor=-1;
+    else
+        cursor = texto_getter().size()-1;
+
+}
+
+void linea_texto::cursor_start() {
+    if (t.vacia())
+        cursor=-1;
+    else
+        cursor=0;
+}
+
+//Postcondicion==> Inserta un nuevo caracter en la posicion del cursor y desplaza el resto
+void linea_texto::insert_in_cursor(const char &c) {
+
+    if (cursor == 0){//Si esta en la posicion inicial solo sacamos un elemento y lo volvemos a guardar despues
+        char parser_char=t.tope();
+        t.pop();
+        t.push(c);
+        t.push(parser_char);
+
+    }
+    else{//Si cursor > 0 entonces necesitamos una pila extra para guardar temporalmente el contenido de t
+        PilaEnla<char> temp_stack;
+        int cont =0;
+        while (cont <= cursor){
+            //Guardamos en la pila todos los caracteres desde el principio hasta el cursor incluyendo a este
+            temp_stack.push(t.tope());
+            t.pop();
+            cont++;
+        }
+        t.push(c);//Metemos el nuevo caracter
+
+        while(!temp_stack.vacia()){//Recuperamos el contenido
+            t.push(temp_stack.tope());
+            temp_stack.pop();
+        }
+
+    }
+
 }
 
 
