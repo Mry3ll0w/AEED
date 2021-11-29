@@ -4,8 +4,7 @@
 
 int main() {
 //srand(time(0));//SOLO DEBE SER LLAMADA UNA Única vez por mainº
-
-    std::cout<<ej2_p4("abcd&dcba#abcd&dcba#abcd&dcba")<<std::endl;
-
+    linea_texto l("El pepe");
+    std::cout<<l.texto_getter()<<std::endl;
 return 0;
 }

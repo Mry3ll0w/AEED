@@ -3,14 +3,10 @@
 
 CMakeFiles/curso2021_22.dir/main.cpp.obj: \
  ../main.cpp \
-<<<<<<< HEAD
  ../p3.hpp \
  ../p4.hpp \
  ../tads_profesorado/pila_enla.h \
  ../tads_profesorado/pila_vec.h
-=======
- ../p3.hpp
->>>>>>> main
 CMakeFiles/curso2021_22.dir/p3.cpp.obj: \
  ../p3.cpp \
  ../p3.hpp

@@ -89,5 +89,7 @@ inline PilaVec <tElemento>::~PilaVec()
 	delete[] elementos;
 }
 
+
+
 #endif // !PILA_VEC_H
 

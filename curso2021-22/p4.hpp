@@ -1,9 +1,11 @@
 #include "tads_profesorado/pila_enla.h"
 #include "tads_profesorado/pila_vec.h"
 #include <iostream>
-
 #include <string>
 #include <cassert>
+#include <algorithm> //std::reverse
+
+
 /*
  * 1. Escriba una función que determine y devuelva si una secuencia de caracteres de entrada
  * es de la forma X&Y , donde X es una cadena de caracteres e Y es la cadena inversa,
@@ -99,3 +101,104 @@ bool ej2_p4(const string & input){
     //Comprobamos que la totalidad de la cadena es correcta
     return correcta;
 }
+
+/**
+ * Escriba una función que dados dos elementos a y b y una pila, invierta la secuencia
+ * delimitada por ambos dentro de ella.Dado que la pila puede tener elementos repetidos,
+ * se invertirá la secuencia delimitada por la primera ocurrencia de a y de b.
+ * Ejemplos: a=1, b=2
+ * Pila original: 4789918679624893210
+ * Pila final: 4789926976814893210
+ */
+ template <class t>
+ PilaEnla<t> ej3_p4(const t& a, const t& b, PilaEnla<t> p_input ){
+     PilaEnla<t> output_pila;
+     //Recorremos la pila hasta llegar al elemento a o acabar la pila
+     while(!p_input.vacia() && p_input.tope()!=a)
+         p_input.pop();
+
+    //Si esta vacia entonces devolvemos la pila vacia, ya que ese elemento no se encuentra en la pila
+    if (!p_input.vacia()){
+
+        while(!p_input.vacia() && p_input.tope()!=b) {
+            output_pila.push(p_input.tope());//insertamos en la pila el intervalo hasta llegar al fin o al elemento
+            p_input.pop();
+        }
+
+     }
+     return output_pila;
+ }
+
+ //El 4 lo va a hacer tu vieja (pereza), el 5 tiene mas chicha
+
+ /* --------------------------------------------------------EJERCICIO 5---------------------------------------------*/
+ class linea_texto{
+ private:
+     PilaEnla<char>t;
+     size_t cursor;
+
+ public:
+     explicit linea_texto(const std::string&);
+     const std::string texto_getter()const;
+     void increment_cursor();
+     void decrement_cursor();
+     void erase_cursor();
+     void erase_previous_cursor();
+     void cursor_end();
+     void cursor_start();
+     void insert_in_cursor(const char& c);
+     void overwrite_cursor(const char& c);
+
+ };
+
+ //Ctor de clase
+ // inicializa la pila con la linea de texto deseada y el cursor se colocar en el primer char de la linea
+ //Tiene que recibir al menos una cadena inicializada, no existe el concepto linea_texto vacia
+linea_texto::linea_texto(const string & str):cursor(0){
+    for(auto i: str)
+        t.push(i);
+
+}
+
+//Precondicion==> La linea de texto no puede estar vacia
+const std::string linea_texto::texto_getter() const{
+    assert(!t.vacia());//aserto
+
+    std::string output;
+    PilaEnla<char>parser_pila;//Para no modificar la pila del tad
+    parser_pila = t;
+    //Insertamos en la cadena la pila actual
+
+    while(!parser_pila.vacia()){
+        output+=parser_pila.tope();
+        parser_pila.pop();
+    }
+    std::reverse(output.begin(),output.end());//Hay que darle la vuelta ya que la pila esta invertida
+
+    return output;
+}
+
+//Al ser una pila incrementar implica decrementar por tanto ==> incrementar -> y decrementar <-
+//Precondicion==> La pila texto no puede estar vacia, el cursor tiene que ser menor al size de la linea
+//Postcondicion==> Incrementa el cursor
+void linea_texto::increment_cursor() {
+assert(!t.vacia());
+assert(cursor < texto_getter().size());
+    // e p e p l E
+    // ^
+    ++cursor;
+}
+
+//Precondicion==> La pila texto no puede estar vacia, cursor > 0
+//Postcondicion==> Incrementa el cursor
+void linea_texto::decrement_cursor() {
+    assert(!t.vacia());
+    assert(cursor < 0);
+    --cursor;
+}
+
+
+
+
+
+
