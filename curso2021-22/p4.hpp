@@ -313,6 +313,26 @@ void linea_texto::insert_in_cursor(const char &c) {
 
 }
 
+void linea_texto::overwrite_cursor(const char &c) {
+    size_t cont = 0;
+    PilaEnla<char>parser_stack;
+    while (cont < cursor){
+        parser_stack.push(t.tope());
+        t.pop();
+        ++cont;
+    }
+    //Sacamos el elemento del cursor y metemos el nuevo caracter
+    t.pop();
+    t.push(c);
+    //Copiamos los caracteres anteriores
+    while(!parser_stack.vacia()){
+        t.push(parser_stack.tope());
+        parser_stack.pop();
+    }
+}
+
+
+
 
 
 
