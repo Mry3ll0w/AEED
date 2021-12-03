@@ -111,25 +111,46 @@ bool ej2_p4(const string & input){
  * Pila final: 4789926976814893210
  */
  template <class t>
- PilaEnla<t> ej3_p4(const t& a, const t& b, PilaEnla<t> p_input ){
-     PilaEnla<t> output_pila;
+ PilaEnla<t> ej3_p4(const t& a, const t& b, PilaEnla<t> p_input ){//ARREGLAR
+     PilaEnla<t> output_pila,pila_izq;
      //Recorremos la pila hasta llegar al elemento a o acabar la pila
-     while(!p_input.vacia() && p_input.tope()!=a)
+     while(!p_input.vacia() && p_input.tope()!=b){
+         pila_izq.push(p_input.tope());
          p_input.pop();
+     }
 
     //Si esta vacia entonces devolvemos la pila vacia, ya que ese elemento no se encuentra en la pila
     if (!p_input.vacia()){
-
-        while(!p_input.vacia() && p_input.tope()!=b) {
+        //Metemos en output pila la parte derecha del limite
+        while(!p_input.vacia() && p_input.tope()!=a) {
             output_pila.push(p_input.tope());//insertamos en la pila el intervalo hasta llegar al fin o al elemento
             p_input.pop();
         }
 
-     }
-     return output_pila;
+        //pasamos los elementos a la pila original
+        //1)Copiamos la pila derecha
+        while(!pila_izq.vacia()){
+            p_input.push(pila_izq.tope());
+            pila_izq.pop();
+        }
+        //2)copiamos la pila derecha
+        while(!output_pila.vacia()){
+            p_input.push(output_pila.tope());
+            output_pila.pop();
+        }
+
+    }
+    //Para la correcta impresion de la pila deberemos invertirla usando otra auxiliar
+    PilaEnla<t>aux;
+    while(!p_input.vacia()){
+        aux.push(p_input.tope());
+        p_input.pop();
+    }
+
+    return aux;
  }
 
- //El 4 lo va a hacer tu vieja (pereza), el 5 tiene mas chicha
+ /*--------------------------------------------------------EJERCICIO 4 ---------------------------------------------*/
 
  /* --------------------------------------------------------EJERCICIO 5---------------------------------------------*/
  class linea_texto{
