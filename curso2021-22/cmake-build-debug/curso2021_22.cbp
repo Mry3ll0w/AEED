@@ -8,105 +8,103 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/cmake-build-debug"/>
+				<Option working_dir="D:/Proyectos/AEED-/curso2021-22/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Proyectos/AEED-/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Proyectos/AEED-/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Proyectos/AEED-/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Proyectos/AEED-/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="curso2021_22">
-				<Option output="C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/cmake-build-debug/curso2021_22.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/cmake-build-debug"/>
+				<Option output="D:/Proyectos/AEED-/curso2021-22/cmake-build-debug/curso2021_22.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Proyectos/AEED-/curso2021-22/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 curso2021_22"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Proyectos/AEED-/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 curso2021_22"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Proyectos/AEED-/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Proyectos/AEED-/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Proyectos/AEED-/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="curso2021_22/fast">
-				<Option output="C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/cmake-build-debug/curso2021_22.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/cmake-build-debug"/>
+				<Option output="D:/Proyectos/AEED-/curso2021-22/cmake-build-debug/curso2021_22.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Proyectos/AEED-/curso2021-22/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 curso2021_22/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Proyectos/AEED-/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 curso2021_22/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Proyectos/AEED-/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Proyectos/AEED-/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Proyectos/AEED-/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/cmake-build-debug"/>
+				<Option working_dir="D:/Proyectos/AEED-/curso2021-22/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Proyectos/AEED-/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Proyectos/AEED-/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Proyectos/AEED-/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Proyectos/AEED-/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/cmake-build-debug"/>
+				<Option working_dir="D:/Proyectos/AEED-/curso2021-22/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Proyectos/AEED-/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Proyectos/AEED-/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Proyectos/AEED-/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Proyectos/AEED-/curso2021-22/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/main.cpp">
+		<Unit filename="D:/Proyectos/AEED-/curso2021-22/main.cpp">
 			<Option target="curso2021_22"/>
 		</Unit>
-		<Unit filename="C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/p1.h">
+		<Unit filename="D:/Proyectos/AEED-/curso2021-22/p1.h">
 			<Option target="curso2021_22"/>
 		</Unit>
-		<Unit filename="C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/p2_cronometro.hpp">
+		<Unit filename="D:/Proyectos/AEED-/curso2021-22/p2_cronometro.hpp">
 			<Option target="curso2021_22"/>
 		</Unit>
-		<Unit filename="C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/p3.cpp">
+		<Unit filename="D:/Proyectos/AEED-/curso2021-22/p3.cpp">
 			<Option target="curso2021_22"/>
 		</Unit>
-		<Unit filename="C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/p3.hpp">
+		<Unit filename="D:/Proyectos/AEED-/curso2021-22/p3.hpp">
 			<Option target="curso2021_22"/>
 		</Unit>
-		<Unit filename="C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/tads_profesorado/cronometro.h">
+		<Unit filename="D:/Proyectos/AEED-/curso2021-22/tads_profesorado/cronometro.h">
 			<Option target="curso2021_22"/>
 		</Unit>
-		<Unit filename="C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/tads_profesorado/ordenacion.cpp">
+		<Unit filename="D:/Proyectos/AEED-/curso2021-22/tads_profesorado/ordenacion.cpp">
 			<Option target="curso2021_22"/>
 		</Unit>
-		<Unit filename="C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/tads_profesorado/ordenacion.h">
+		<Unit filename="D:/Proyectos/AEED-/curso2021-22/tads_profesorado/ordenacion.h">
 			<Option target="curso2021_22"/>
 		</Unit>
-		<Unit filename="C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/CMakeLists.txt">
+		<Unit filename="D:/Proyectos/AEED-/curso2021-22/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

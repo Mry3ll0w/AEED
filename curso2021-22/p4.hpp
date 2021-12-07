@@ -1,10 +1,11 @@
 #include "tads_profesorado/pila_enla.h"
 #include "tads_profesorado/pila_vec.h"
 #include <iostream>
+#include <random>
 #include <string>
 #include <cassert>
 #include <algorithm> //std::reverse
-
+#include <vector>
 
 /*
  * 1. Escriba una función que determine y devuelva si una secuencia de caracteres de entrada
@@ -352,8 +353,96 @@ void linea_texto::overwrite_cursor(const char &c) {
     }
 }
 
+/*
+ * Solitario
+ */
+//Defino este procedimiento a modo de main para el solitario y tal
+void solitario(){
+    //Definicion de variables
+    enum palo{basto, espada, copa, oro};
+    string palos[] ={"basto","espada","copa","oro"};
+    int colocadas[4]={0,0,0,0};
+    struct carta{
+        int n;
+        unsigned p;
+        carta(int n_=0,unsigned p_=0):n(n_),p(p_) {}
+    };
+    std::vector<carta> baraja;
+    PilaVec<carta>maze(48),descarte(48);
+    bool coloca=false;
+    size_t vuelta = 0;//para contar las vueltas
+
+    //inicializamos la baraja
+    for (int i = 0; i < 4 ; ++i) {//De cada palo
+        for(int j = 1; j <=12 ; ++j){
+            baraja.emplace_back(carta(j,i));
+        }
+    }
+    //Hacemos un random shuffle a la baraja para mezclar las cartas (esta es la version mas segura de random shuffle)
+    std::shuffle(baraja.begin(), baraja.end(), std::random_device());
+    //Tras haber barajado las cartas empezaremos el algoritmo de colocacion
+
+    //1) Pasamos a pila la baraja
+    for(auto i: baraja)
+        maze.push(i);
 
 
+    while(true){
+        //Mientras que queden cartas en el mazo sacamos
+        coloca=false;//reset de coloca
+        while(!maze.vacia()){
+
+
+            //Comprobamos si se puede colocar
+            if (maze.tope().n-1 == colocadas[maze.tope().p]){
+
+                //Si es la carta anterior la que esta en el mazo entonces coloca la carta
+                colocadas[maze.tope().p]=maze.tope().n;
+                coloca=true;
+            }
+            else{//Si no se corresponde entonces colocala en descarte
+                descarte.push(maze.tope());
+            }
+
+            maze.pop();
+        }
+
+        vuelta++;//Aumentamos la vuelta, ya que si en vuelta < 1 y no se ha colocado se sale
+
+
+
+        //comprobamos que todas las cartas se han colocado
+        if(colocadas[0]==12 && colocadas[1]==12 &&colocadas[2]==12 &&colocadas[3]==12)
+            break;
+
+        if(vuelta >= 1 && !coloca){//Si no ha colocado entonces salimos en la segunda vuelta
+            break;
+        }
+
+        //Miramos si se ha colocado
+        if (coloca){
+            //Si se ha colocado volcamos el descarte en los mazos
+            while(!descarte.vacia()){
+                maze.push(descarte.tope());
+                descarte.pop();
+            }
+
+        }
+
+
+
+    }
+    //Si se ha ganado el descarte estara vacio, al igual que el mazo
+    if (descarte.vacia() && maze.vacia()){
+        std::cout<<"Victoria"<<std::endl;
+    }
+    else{
+        std::cout<<"Has perdido"<<std::endl;
+        std::cout<<"Estado de las cartas: "<<colocadas[0]<<' '<<colocadas[1]<<' '<<colocadas[2]<<' '<< colocadas[3]<<std::endl;
+    }
+
+
+}
 
 
 
