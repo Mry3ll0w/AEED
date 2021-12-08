@@ -409,9 +409,7 @@ void solitario(){
 
         vuelta++;//Aumentamos la vuelta, ya que si en vuelta < 1 y no se ha colocado se sale
 
-
-
-        //comprobamos que todas las cartas se han colocado
+        //comprobamos si todas las cartas se han colocado
         if(colocadas[0]==12 && colocadas[1]==12 &&colocadas[2]==12 &&colocadas[3]==12)
             break;
 
@@ -429,9 +427,8 @@ void solitario(){
 
         }
 
-
-
     }
+
     //Si se ha ganado el descarte estara vacio, al igual que el mazo
     if (descarte.vacia() && maze.vacia()){
         std::cout<<"Victoria"<<std::endl;
