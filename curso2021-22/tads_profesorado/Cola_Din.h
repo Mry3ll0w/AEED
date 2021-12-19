@@ -76,12 +76,16 @@ inline const T& ColaDin<T>::frente() const
 template <typename T>
 inline void ColaDin<T>::pop()
 {
-	assert(!vacia());
+
+    assert(!vacia());
 	nodo* p = inicio;
 	inicio = p->sig;
-	if (!inicio) fin = 0;
+
+    if (!inicio) fin = 0;
+
 	delete p;
 }
+
 template <typename T>
 inline void ColaDin<T>::push(const T& x)
 {
@@ -90,6 +94,7 @@ inline void ColaDin<T>::push(const T& x)
 		inicio = fin = p;
 	else
 		fin = fin->sig = p;
+
 }
 template <typename T>
 ColaDin<T>::~ColaDin()

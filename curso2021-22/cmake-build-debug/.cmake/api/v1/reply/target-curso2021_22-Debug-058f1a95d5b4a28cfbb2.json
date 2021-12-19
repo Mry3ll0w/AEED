@@ -108,7 +108,8 @@
 				3,
 				4,
 				6,
-				8
+				8,
+				9
 			]
 		}
 	],
@@ -160,6 +161,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "p5.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "bicola.hpp",
 			"sourceGroupIndex" : 1
 		}
 	],

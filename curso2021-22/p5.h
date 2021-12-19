@@ -114,6 +114,14 @@ void p5_ej2(ColaDin<t>& c, const t& a, const t& b){
 
 }
 
+/*
+ * EJERCICIO 3
+ * Se define una bicola o cola doble como una cola en la cual se pueden hacer inserciones y
+ * borrados en ambos extremos.
+ * Realice la especificación e implementación (mediante una estructura enlazada) del TAD
+ * Bicola.
+ * implementación en hpp aparte
+ */
 
 
 #endif //CURSO2021_22_P5_H

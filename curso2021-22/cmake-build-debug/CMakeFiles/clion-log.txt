@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" D:\Proyectos\AEED-\curso2021-22
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - MinGW Makefiles" C:\Users\anton\OneDrive\Escritorio\AEED\curso2021-22
 -- Configuring done
 -- Generating done
--- Build files have been written to: D:/Proyectos/AEED-/curso2021-22/cmake-build-debug
+-- Build files have been written to: C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/cmake-build-debug

@@ -358,7 +358,7 @@ void linea_texto::overwrite_cursor(const char &c) {
  */
 //Defino este procedimiento a modo de main para el solitario y tal
 void solitario(){
-    //Definicion de variables
+    //Deffrenten de variables
     enum palo{basto, espada, copa, oro};
     string palos[] ={"basto","espada","copa","oro"};
     int colocadas[4]={0,0,0,0};

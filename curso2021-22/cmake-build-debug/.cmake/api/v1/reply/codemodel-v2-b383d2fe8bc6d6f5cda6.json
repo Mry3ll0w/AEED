@@ -6,7 +6,6 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.20"
@@ -39,7 +38,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "curso2021_22::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-curso2021_22-Debug-acda7b48f7b13452bd4b.json",
+					"jsonFile" : "target-curso2021_22-Debug-058f1a95d5b4a28cfbb2.json",
 					"name" : "curso2021_22",
 					"projectIndex" : 0
 				}
@@ -49,12 +48,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/Proyectos/AEED-/curso2021-22/cmake-build-debug",
-		"source" : "D:/Proyectos/AEED-/curso2021-22"
+		"build" : "C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/cmake-build-debug",
+		"source" : "C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 3
+		"minor" : 2
 	}
 }
