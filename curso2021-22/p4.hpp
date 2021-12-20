@@ -6,6 +6,23 @@
 #include <cassert>
 #include <algorithm> //std::reverse
 #include <vector>
+template <class t>
+std::ostream& operator<<(std::ostream&os,PilaEnla<t>&p){
+    while(!p.vacia()){
+        os<<p.tope()<<" ";
+        p.pop();
+    }
+    return os;
+}
+
+template <class t>
+std::ostream& operator<<(std::ostream&os,PilaVec<t>&p){
+    while(!p.vacia()){
+        os<<p.tope()<<" ";
+        p.pop();
+    }
+    return os;
+}
 
 /*
  * 1. Escriba una función que determine y devuelva si una secuencia de caracteres de entrada

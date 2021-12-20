@@ -16,15 +16,15 @@ public:
 	~ColaCir(); // destructor
 private:
 	T* elementos; // vector de elementos
-	int Lmax; // tamaï¿½o del vector
-	int frente, fin; // posiciones de los extremos
+	int Lmax; // tamaño del vector
+	int inicio, fin; // posiciones de los extremos
 };
 
 template <typename T>
 ColaCir<T>::ColaCir(size_t TamaMax) :
 	elementos(new T[TamaMax + 1]), // +1 para detectar cola llena
 	Lmax(TamaMax + 1),
-	frente(0),
+	inicio(0),
 	fin(TamaMax)
 {}
 
@@ -32,11 +32,11 @@ template <typename T>
 ColaCir<T>::ColaCir(const ColaCir<T>& C) :
 	elementos(new T[C.Lmax]),
 	Lmax(C.Lmax),
-	frente(C.frente),
+	inicio(C.inicio),
 	fin(C.fin)
 {
 	if (!C.vacia()) // Copiar el vector
-		for (int i = frente; i != (fin + 1) % Lmax; i = (i + 1) % Lmax)
+		for (int i = inicio; i != (fin + 1) % Lmax; i = (i + 1) % Lmax)
 			elementos[i] = C.elementos[i];
 }
 template <typename T>
@@ -52,10 +52,10 @@ ColaCir<T>& ColaCir<T>::operator =(const ColaCir<T>& C)
 			elementos = new T[Lmax];
 		}
 		// Copiar el vector
-		frente = C.frente;
+		inicio = C.inicio;
 		fin = C.fin;
 		if (!C.vacia())
-			for (int i = frente; i != (fin + 1) % Lmax; i = (i + 1) % Lmax)
+			for (int i = inicio; i != (fin + 1) % Lmax; i = (i + 1) % Lmax)
 				elementos[i] = C.elementos[i];
 	}
 	return *this;
@@ -63,24 +63,24 @@ ColaCir<T>& ColaCir<T>::operator =(const ColaCir<T>& C)
 template <typename T>
 inline bool ColaCir<T>::vacia() const
 {
-	return ((fin + 1) % Lmax == frente);
+	return ((fin + 1) % Lmax == inicio);
 }
 template <typename T>
 inline bool ColaCir<T>::llena() const
 {
-	return((fin + 2) % Lmax == frente);
+	return((fin + 2) % Lmax == inicio);
 }
 template <typename T>
 inline const T& ColaCir<T>::frente() const
 {
 	assert(!vacia());
-	return elementos[frente];
+	return elementos[inicio];
 }
 template <typename T>
 inline void ColaCir<T>::pop()
 {
 	assert(!vacia());
-	frente = (frente + 1) % Lmax;
+	inicio = (inicio + 1) % Lmax;
 }
 template <typename T>
 inline void ColaCir<T>::push(const T& x)

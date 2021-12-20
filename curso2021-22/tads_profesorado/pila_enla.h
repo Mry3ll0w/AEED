@@ -3,8 +3,6 @@
 #include <cassert>
 #include <iostream>
 using namespace std;
-
-
 template <typename T>
 class PilaEnla
 {
@@ -105,15 +103,4 @@ void PilaEnla<T>::copiar(const PilaEnla<T>& P)
 		}
 	}
 }
-
-//Funcion para imprimir pilas pq me da pereza bucles
-template <class t>
-std::ostream& operator<<(std::ostream&os, PilaEnla<t> p){
-    while(!p.vacia()){
-        os<<p.tope()<<", ";
-        p.pop();
-    }
-    return os;
-}
-
 #endif // PILAENLA_H_INCLUDED
