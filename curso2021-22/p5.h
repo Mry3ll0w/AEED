@@ -21,6 +21,15 @@ std::ostream& operator<<(std::ostream& stream, ColaDin<t> c){
     return stream;
 }
 
+template <class t>
+std::ostream& operator<<(std::ostream& stream, ColaCir<t> c){
+    while(!c.vacia()){
+        stream << c.frente()<<", ";
+        c.pop();
+    }
+    return stream;
+}
+
 /* EJERCICIO 1
  * Se dice que una pila es isomórfica a una cola cuando los elementos situados en posiciones
  * pares de la pila coinciden con los situados en posiciones impares de la cola.
@@ -167,9 +176,12 @@ private:
     ColaCir<avioneta> pista;//Tamaño maximo 12
     ColaDin<avioneta> espera;//No especifica nada del tamaño asi que entiendo que ilimitado
 public:
-    aerodromo(const size_t& size_pista):pista(ColaCir<avioneta>(size_pista)),ocupados(0){};
-    ~aerodromo();
+    aerodromo(const size_t& size_pista = 12):pista(ColaCir<avioneta>(size_pista)),ocupados(0){};
+    //~aerodromo();
     void accion(const char& op,const avioneta& a);
+    void print_aerodromo(){
+        std::cout<<pista<<std::endl;
+    }
 };
 
 void aerodromo::accion(const char& op,const avioneta&a){
@@ -186,6 +198,7 @@ void aerodromo::accion(const char& op,const avioneta&a){
         }
         else{//El avion esta en la pista pero en otra posicion
             ColaCir<avioneta> parser = ColaCir<avioneta>(12);//En el peor caso el avion no esta
+            ColaDin<avioneta> resto ;
             //Copiamos la pista hasta sacar el avion que toca
             while(!pista.vacia() && pista.frente()!=a){
                 parser.push(pista.frente());
@@ -200,11 +213,20 @@ void aerodromo::accion(const char& op,const avioneta&a){
             else{
                 std::cout<<"El avion no esta en pista ";
             }
-
+            //Copiamos lo que quede en la cola en otra
+            while(!pista.vacia()){
+                resto.push(pista.frente());
+                pista.pop();
+            }
             //Restauramos la cola original
             while(!parser.vacia()){
                 pista.push(parser.frente());
                 parser.pop();
+            }
+
+            while(!resto.vacia()){
+                pista.push(resto.frente());
+                resto.pop();
             }
 
         }
