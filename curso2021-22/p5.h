@@ -10,6 +10,7 @@
 #include <cassert>//Para assert()
 #include "tads_profesorado/Cola_Din.h"
 #include "tads_profesorado/Cola_Cir.h"
+#include "tads_profesorado/pila_vec.h"
 #include "tads_profesorado/pila_enla.h"
 
 template <class t>
@@ -21,14 +22,7 @@ std::ostream& operator<<(std::ostream& stream, ColaDin<t> c){
     return stream;
 }
 
-template <class t>
-std::ostream& operator<<(std::ostream& stream, ColaCir<t> c){
-    while(!c.vacia()){
-        stream << c.frente()<<", ";
-        c.pop();
-    }
-    return stream;
-}
+
 
 /* EJERCICIO 1
  * Se dice que una pila es isomórfica a una cola cuando los elementos situados en posiciones
@@ -180,7 +174,7 @@ public:
     //~aerodromo();
     void accion(const char& op,const avioneta& a);
     void print_aerodromo(){
-        std::cout<<pista<<std::endl;
+        //std::cout<<pista<<std::endl;
     }
 };
 
@@ -242,6 +236,127 @@ void aerodromo::accion(const char& op,const avioneta&a){
             std::cout<<"Avion "<<a<<" se ha introducido en cola de espera"<<std::endl;
         }
     }
+
+}
+
+
+
+/*
+ * Se reparten las cartas de la baraja española en diez montones de cuatro cartas cada uno.
+ * Cada montón se corresponde con una de las diez figuras de la baraja. Se escoge uno de los
+ * montones al azar y se extrae la carta de dicho montón que esté en la cima. Esta carta se
+ * coloca al final del montón correspondiente a la figura que represente, extrayéndose ahora
+ * la primera carta de este montón. Este ciclo se repite hasta llegar a un montón en el que
+ * las cuatro cartas de la figura correspondiente han sido colocadas.
+ * El juego se considera acabado con éxito si los cuatro reyes están en su montón.
+ */
+void solitario_reyes(){
+
+
+    //Variables
+    enum palo{basto, espada, copa, oro};
+    string palos[] ={"basto","espada","copa","oro"};
+
+    struct carta{
+        int n;
+        unsigned p;
+        carta(int n_=0,unsigned p_=0):n(n_),p(p_) {}
+    };
+
+    std::vector<carta> baraja;
+    PilaVec<carta>maze(48);
+
+
+    //inicializamos la baraja
+    for (int i = 0; i < 4 ; ++i) {//De cada palo
+        for(int j = 1; j <=12 ; ++j){
+            baraja.emplace_back(carta(j,i));
+        }
+    }
+    //Hacemos un random shuffle a la baraja para mezclar las cartas (esta es la version mas segura de random shuffle)
+    std::shuffle(baraja.begin(), baraja.end(), std::random_device());
+
+
+    //Inicializar maze
+    for(auto i:baraja)
+        maze.push(i);
+
+
+
+    //necesitamos una estructura monton
+    struct monton{
+        ColaCir<carta>m;
+        size_t cont_cartas;
+        monton():m(ColaCir<carta>(4)),cont_cartas(0){}
+
+    };
+
+    std::vector<monton>montones(12);//del as al 12
+
+    //Inicializo los montones metiendo las cartas aleatorias de la baraja
+    size_t it_montones = 0;
+    while(!maze.vacia()){
+
+        for(size_t i = 0; i < 4;++i){
+
+            montones[it_montones].m.push(maze.tope());
+            maze.pop();
+        }
+
+        ++it_montones;
+    }
+
+    //INICIO DEL ALGORITMO
+    bool victoria = false;
+    //1) Vemos que ya no exista 4 cartas en alguno de los montones
+
+    //Algoritmo del juego
+    //Empezamos con un numero aleatorio asi que seleccionamos el primer numero de la primera carta
+    size_t selecciona_monton = baraja[0].n;
+
+     while(!victoria){
+
+         //Contamos las cartas para ver si se ha llegado
+         for(auto i : montones){
+
+             ColaCir<carta>temp=i.m;
+             size_t cont_temp=0;
+             size_t num_carta = temp.frente().n;
+             //Contar cuantas cartas iguales hay
+             while(!temp.vacia()){
+                 std::cout <<temp.frente().n<<" de "<<palos[temp.frente().p]<<std::endl;
+                 if(temp.frente().n==num_carta)
+                     cont_temp++;
+
+                 temp.pop();
+             }
+             std::cout<<std::endl;
+             std::cout<<std::endl;
+             i.cont_cartas = cont_temp;
+             if (cont_temp==4){
+                 victoria = true;
+                 break;
+             }
+
+         }
+
+         //Seleccion del monton
+         //Correccion para no segmentation fault
+         if (selecciona_monton == 12){
+             selecciona_monton--;//Lo ponemos a 11 ya que falta
+         }
+
+        //Algoritmo de colocacion de carta
+        carta parser_carta= montones[selecciona_monton].m.frente();
+        montones[selecciona_monton].m.pop();//Sacamos la carta
+        //metemos la carta en el monton
+        montones[selecciona_monton].m.push(parser_carta);
+        //actualizamos el selector de monton
+        selecciona_monton = parser_carta.n;
+
+     }
+
+
 
 }
 
