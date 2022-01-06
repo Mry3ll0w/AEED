@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Proyectos/AEED-/curso2021-22/Escalonada.h">
+			<Option target="curso2021_22"/>
+		</Unit>
 		<Unit filename="D:/Proyectos/AEED-/curso2021-22/bicola.hpp">
 			<Option target="curso2021_22"/>
 		</Unit>

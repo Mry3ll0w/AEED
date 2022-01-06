@@ -199,7 +199,7 @@ ListaEnla<t> p6_ej7(const ListaEnla<ListaEnla<t>>& l){
         for(auto i = l.elemento(it).primera(); i != l.elemento(it).fin();i=l.elemento(it).siguiente(i)){
             dest.insertar(l.elemento(it).elemento(i),dest.fin());
         }
-        
+
     }
 return dest;
 }
@@ -228,6 +228,7 @@ private:
     ListaEnla<char>num;
     size_t size;
 public:
+
     explicit binario(const std::string & s=" ");
     void NOT();
     void OR(const binario & b);
@@ -235,6 +236,7 @@ public:
     void OR_exclude(const binario & b);
     void desp_izq(const size_t& n);
     void desp_der(const size_t& n);
+    const ListaEnla<char>& get_num(){return num;}
 
 };
 
@@ -298,30 +300,50 @@ void binario::OR_exclude(const binario &b) {
 }
 
 void binario::desp_izq(const size_t &n) {
-    size+=n;//Aumenta
+
+    ListaEnla<char>parser;
     auto p = num.primera();
+    auto fin_parser = parser.fin();
 
     //Mete los distintos ceros a la izquierda
-    for(size_t i=0; i< n && p!= num.fin() ; ++i){
+    for(size_t i=0; i< n && p != num.fin() ; ++i){
 
-        num.elemento(p)=0;
+        parser.insertar('0',fin_parser);
+
+        p=num.siguiente(p);
+    }
+    //Metemos el resto de la lista en el parser a partir de las inserciones anteriores
+    while(p != num.fin()){
+        parser.insertar(num.elemento(p),fin_parser);
+        p = num.siguiente(p);
+    }
+
+
+    num= parser;// Sobreescribimos num con la Lista ya desplazada
+}
+
+void binario::desp_der(const size_t &n) {
+
+    ListaEnla<char>parser;
+    auto p = num.primera();//Apunta al ultimo elemento de la lista
+    auto fin_parser = parser.fin();
+
+    //Mete los elementos sin desplazar
+    for(size_t i=0; i< (size-n) && p != num.fin() ; ++i){
+
+        parser.insertar(num.elemento(p),fin_parser);
 
         p=num.siguiente(p);
     }
 
-}
-
-void binario::desp_der(const size_t &n) {
-    size+=n;//Aumenta
-    auto p = num.fin();
-
-    //Mete los distintos ceros a la izquierda
-    for(size_t i=0; i< n && p!= num.primera() ; ++i){
-
-        num.elemento(p)=0;
-
-        p=num.anterior(p);
+    //Metemos el resto de la lista en el parser a partir de las inserciones anteriores
+    while(p != num.fin()){
+        parser.insertar('0',fin_parser);
+        p = num.siguiente(p);
     }
+//CORREGIR ORDENACION
+
+    num= parser;// Sobreescribimos num con la Lista ya desplazada
 
 }
 

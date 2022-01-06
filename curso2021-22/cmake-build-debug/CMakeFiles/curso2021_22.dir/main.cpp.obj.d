@@ -136,4 +136,5 @@ CMakeFiles/curso2021_22.dir/main.cpp.obj: \
  D:\Proyectos\AEED-\curso2021-22\tads_profesorado/Cola_Din.h \
  D:\Proyectos\AEED-\curso2021-22\tads_profesorado/Cola_Cir.h \
  D:\Proyectos\AEED-\curso2021-22\p6.h \
- D:\Proyectos\AEED-\curso2021-22\tads_profesorado/ListaEnla.h
+ D:\Proyectos\AEED-\curso2021-22\tads_profesorado/ListaEnla.h \
+ D:\Proyectos\AEED-\curso2021-22\Escalonada.h

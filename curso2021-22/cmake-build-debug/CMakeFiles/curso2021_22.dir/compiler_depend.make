@@ -151,7 +151,8 @@ CMakeFiles/curso2021_22.dir/main.cpp.obj: ../main.cpp \
   ../tads_profesorado/Cola_Din.h \
   ../tads_profesorado/Cola_Cir.h \
   ../p6.h \
-  ../tads_profesorado/ListaEnla.h
+  ../tads_profesorado/ListaEnla.h \
+  ../Escalonada.h
 
 CMakeFiles/curso2021_22.dir/p3.cpp.obj: ../p3.cpp \
   ../p3.hpp \
@@ -625,5 +626,7 @@ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_tempbuf.h:
 ../tads_profesorado/Cola_Cir.h:
 
 ../p6.h:
+
+../Escalonada.h:
 
 ../tads_profesorado/ordenacion.cpp:

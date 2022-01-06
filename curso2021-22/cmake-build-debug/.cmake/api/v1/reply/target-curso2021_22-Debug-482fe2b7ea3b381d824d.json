@@ -110,7 +110,8 @@
 				6,
 				8,
 				9,
-				10
+				10,
+				11
 			]
 		}
 	],
@@ -172,6 +173,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "p6.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Escalonada.h",
 			"sourceGroupIndex" : 1
 		}
 	],
