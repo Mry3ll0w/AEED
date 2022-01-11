@@ -137,4 +137,15 @@ CMakeFiles/curso2021_22.dir/main.cpp.obj: \
  D:\Proyectos\AEED-\curso2021-22\tads_profesorado/Cola_Cir.h \
  D:\Proyectos\AEED-\curso2021-22\p6.h \
  D:\Proyectos\AEED-\curso2021-22\tads_profesorado/ListaEnla.h \
- D:\Proyectos\AEED-\curso2021-22\Escalonada.h
+ D:\Proyectos\AEED-\curso2021-22\Escalonada.h \
+ D:\Proyectos\AEED-\curso2021-22\texto.h \
+ D:\Proyectos\AEED-\curso2021-22\ej4_parcial2022.h \
+ c:\mingw\lib\gcc\mingw32\9.2.0\include\c++\list \
+ c:\mingw\lib\gcc\mingw32\9.2.0\include\c++\bits\stl_list.h \
+ c:\mingw\lib\gcc\mingw32\9.2.0\include\c++\bits\allocated_ptr.h \
+ c:\mingw\lib\gcc\mingw32\9.2.0\include\c++\ext\aligned_buffer.h \
+ c:\mingw\lib\gcc\mingw32\9.2.0\include\c++\bits\list.tcc \
+ D:\Proyectos\AEED-\curso2021-22\tads_profesorado/cronometro.h \
+ c:\mingw\lib\gcc\mingw32\9.2.0\include\c++\ctime c:\mingw\include\time.h \
+ D:\Proyectos\AEED-\curso2021-22\texto_feb21.h \
+ D:\Proyectos\AEED-\curso2021-22\cubilete.h

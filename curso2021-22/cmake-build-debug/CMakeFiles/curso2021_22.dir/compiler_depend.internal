@@ -154,6 +154,18 @@ CMakeFiles/curso2021_22.dir/main.cpp.obj
  D:/Proyectos/AEED-/curso2021-22/p6.h
  D:/Proyectos/AEED-/curso2021-22/tads_profesorado/ListaEnla.h
  D:/Proyectos/AEED-/curso2021-22/Escalonada.h
+ D:/Proyectos/AEED-/curso2021-22/texto.h
+ D:/Proyectos/AEED-/curso2021-22/ej4_parcial2022.h
+ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/list
+ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_list.h
+ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/allocated_ptr.h
+ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/ext/aligned_buffer.h
+ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/list.tcc
+ D:/Proyectos/AEED-/curso2021-22/tads_profesorado/cronometro.h
+ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/ctime
+ C:/MinGW/include/time.h
+ D:/Proyectos/AEED-/curso2021-22/texto_feb21.h
+ D:/Proyectos/AEED-/curso2021-22/cubilete.h
 
 CMakeFiles/curso2021_22.dir/p3.cpp.obj
  D:/Proyectos/AEED-/curso2021-22/p3.cpp

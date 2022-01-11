@@ -152,7 +152,19 @@ CMakeFiles/curso2021_22.dir/main.cpp.obj: ../main.cpp \
   ../tads_profesorado/Cola_Cir.h \
   ../p6.h \
   ../tads_profesorado/ListaEnla.h \
-  ../Escalonada.h
+  ../Escalonada.h \
+  ../texto.h \
+  ../ej4_parcial2022.h \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/list \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_list.h \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/allocated_ptr.h \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/ext/aligned_buffer.h \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/list.tcc \
+  ../tads_profesorado/cronometro.h \
+  C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/ctime \
+  C:/MinGW/include/time.h \
+  ../texto_feb21.h \
+  ../cubilete.h
 
 CMakeFiles/curso2021_22.dir/p3.cpp.obj: ../p3.cpp \
   ../p3.hpp \
@@ -521,6 +533,8 @@ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/ostream_insert.h:
 
 C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/cxxabi_forced.h:
 
+C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_list.h:
+
 C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_function.h:
 
 C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/backward/binders.h:
@@ -607,6 +621,8 @@ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/random.tcc:
 
 C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/numeric:
 
+C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/list:
+
 C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_numeric.h:
 
 C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/algorithm:
@@ -628,5 +644,23 @@ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/stl_tempbuf.h:
 ../p6.h:
 
 ../Escalonada.h:
+
+../texto.h:
+
+../ej4_parcial2022.h:
+
+C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/allocated_ptr.h:
+
+C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/ext/aligned_buffer.h:
+
+C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/list.tcc:
+
+../tads_profesorado/cronometro.h:
+
+C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/ctime:
+
+../texto_feb21.h:
+
+../cubilete.h:
 
 ../tads_profesorado/ordenacion.cpp:

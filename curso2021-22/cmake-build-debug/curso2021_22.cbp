@@ -86,6 +86,12 @@
 		<Unit filename="D:/Proyectos/AEED-/curso2021-22/bicola.hpp">
 			<Option target="curso2021_22"/>
 		</Unit>
+		<Unit filename="D:/Proyectos/AEED-/curso2021-22/cubilete.h">
+			<Option target="curso2021_22"/>
+		</Unit>
+		<Unit filename="D:/Proyectos/AEED-/curso2021-22/ej4_parcial2022.h">
+			<Option target="curso2021_22"/>
+		</Unit>
 		<Unit filename="D:/Proyectos/AEED-/curso2021-22/main.cpp">
 			<Option target="curso2021_22"/>
 		</Unit>
@@ -114,6 +120,12 @@
 			<Option target="curso2021_22"/>
 		</Unit>
 		<Unit filename="D:/Proyectos/AEED-/curso2021-22/tads_profesorado/ordenacion.h">
+			<Option target="curso2021_22"/>
+		</Unit>
+		<Unit filename="D:/Proyectos/AEED-/curso2021-22/texto.h">
+			<Option target="curso2021_22"/>
+		</Unit>
+		<Unit filename="D:/Proyectos/AEED-/curso2021-22/texto_feb21.h">
 			<Option target="curso2021_22"/>
 		</Unit>
 		<Unit filename="D:/Proyectos/AEED-/curso2021-22/CMakeLists.txt">

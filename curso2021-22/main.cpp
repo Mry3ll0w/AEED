@@ -4,18 +4,21 @@
 #include "p5.h"
 #include "p6.h"
 #include "Escalonada.h"
+#include "texto.h"
+#include "ej4_parcial2022.h"
+#include "texto_feb21.h"
+#include "cubilete.h"
 
 int main() {
 //srand(time(0));//SOLO DEBE SER LLAMADA UNA Única vez por mainº
 //solitario();
 //solitario_reyes();
-
-Escalonada e(0,2);
-e.insertar_salto(12);
-e.insertar_salto(2);
-e.show_grafica();std::cout <<std::endl;
-e.eliminar_salto(2);
-e.show_grafica();
+PilaEnla<cubilete> p;
+p=ejercicio_cubilete();
+while (!p.vacia()){
+    std::cout<<p.tope().anchura<<std::endl;
+    p.pop();
+}
 return 0;
 }
 
