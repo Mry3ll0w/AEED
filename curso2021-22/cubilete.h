@@ -35,7 +35,8 @@ const cubilete mayor_cubilete(PilaEnla<cubilete> & p){
     while(!p.vacia()){
 
         if(p.tope()!= t)
-            t2.push(p.tope());
+            t2.push(p.tope());//Siempre tiene que estar boca abajo para hacer
+            //la torre de forma correcta
 
         p.pop();
     }
@@ -44,6 +45,17 @@ const cubilete mayor_cubilete(PilaEnla<cubilete> & p){
 
     return t;
 }
+
+PilaEnla<cubilete> corrige_altura(PilaEnla<cubilete> p){
+    PilaEnla<cubilete>temp;
+
+    while(!p.vacia()){
+        temp.push(cubilete(p.tope().anchura,"boca abajo"));
+        p.pop();
+    }
+return temp;
+}
+
 
 PilaEnla<cubilete> ejercicio_cubilete(){
     //Inicilizamos una serie de cubiletes con posiciones y anchura aleatorias
@@ -59,10 +71,12 @@ PilaEnla<cubilete> ejercicio_cubilete(){
     for(size_t i = 0; i < 8 ; ++i){
         input.push(cubilete(dist_anchura(gen),pos[distr(gen)]));
     }
+    //necesitamos corregir la posicion de todos los cubos para conseguir una piramide
+    input = corrige_altura(input);
 
     while(!input.vacia()){
 
-        salida.push(mayor_cubilete(input));
+        salida.push(mayor_cubilete(input ));
 
     }
 

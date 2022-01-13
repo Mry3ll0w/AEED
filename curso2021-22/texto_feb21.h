@@ -31,7 +31,7 @@ public:
     ~texto2()=default;
     void insertar_linea(const tLinea& line);
     void show_texto();
-    void erase_word(const std::string& word);
+    void substitute_word(const std::string& word,const std::string& new_word);
 };
 
 void texto2::insertar_linea(const tLinea &line) {
@@ -52,7 +52,7 @@ void texto2::show_texto() {
 
 }
 
-void texto2::erase_word(const std::string &word) {
+void texto2::substitute_word(const std::string &word,const string& new_word) {
 
     for(auto i= t.lineas.primera(); i != t.lineas.fin(); i=t.lineas.siguiente(i)){
 
@@ -63,7 +63,7 @@ void texto2::erase_word(const std::string &word) {
 
             //Si la búsqueda apunta al final entonces no existe ese elemento
             if( pos != t.lineas.elemento(i).palabras.fin()){
-                t.lineas.elemento(i).palabras.eliminar(pos);
+                t.lineas.elemento(i).palabras.elemento(pos)=new_word;
             }
         }
 

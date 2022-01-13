@@ -16,7 +16,7 @@ int main() {
 PilaEnla<cubilete> p;
 p=ejercicio_cubilete();
 while (!p.vacia()){
-    std::cout<<p.tope().anchura<<std::endl;
+    std::cout<<p.tope().anchura<<"\t"<<p.tope().posicion<<std::endl;
     p.pop();
 }
 return 0;

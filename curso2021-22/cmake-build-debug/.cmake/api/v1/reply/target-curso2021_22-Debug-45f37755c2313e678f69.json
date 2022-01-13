@@ -115,7 +115,8 @@
 				12,
 				13,
 				14,
-				15
+				15,
+				16
 			]
 		}
 	],
@@ -202,6 +203,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "cubilete.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cocina.h",
 			"sourceGroupIndex" : 1
 		}
 	],
