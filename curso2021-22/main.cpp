@@ -8,17 +8,29 @@
 #include "ej4_parcial2022.h"
 #include "texto_feb21.h"
 #include "cubilete.h"
+#include "hospital.h"
+#include "tads_profesorado/listavec.h"
 
 int main() {
 //srand(time(0));//SOLO DEBE SER LLAMADA UNA Única vez por mainº
 //solitario();
 //solitario_reyes();
-PilaEnla<cubilete> p;
-p=ejercicio_cubilete();
-while (!p.vacia()){
-    std::cout<<p.tope().anchura<<"\t"<<p.tope().posicion<<std::endl;
-    p.pop();
-}
+
+hospital h(3,2);
+paciente p = paciente("1230",5),p2 =paciente("1231",2),p3= paciente("1232",4),p4 = paciente("1233",3);
+h.ingresar_paciente(p);
+h.ingresar_paciente(p2);
+h.ingresar_paciente(p3);
+h.pacientes_uci();
+std::cout << std::endl;
+std::cout << std::endl;
+h.ingresar_paciente(p4);
+std::cout<<"Tras insercion"<<std::endl;
+h.pacientes_uci();
+std::cout << "pacientes planta "<<std::endl;
+h.pacientes_planta();
+
+
 return 0;
 }
 

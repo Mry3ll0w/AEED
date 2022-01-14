@@ -43,11 +43,11 @@ struct mueble{
 
     float anchura;
     float posicion;//Con respecto al inicio de la pared dada
-    mueble(const float a = 0, const float& p = 0):anchura(a),posicion(p) {}
+    mueble(const float a = 1, const float& p = 0):anchura(a),posicion(p) { assert(a >= 1);}
     bool operator < (const mueble& a) const{ return posicion < a.posicion;}
     bool operator > (const mueble& a) const{ return posicion > a.posicion;}
     bool operator ==(const mueble& a) const {return anchura == a.anchura && posicion == a.posicion;}
-
+    mueble& operator =(const mueble&m)=default;
 };
 
 class cocina{
@@ -63,6 +63,7 @@ public:
     ~cocina()=default;
     bool cabe(const mueble& m);
     const mueble& devolver_mueble(const int n);
+    void insertar_mueble(const mueble& m);
     void eliminar_mueble(const int n);
     void pegar_mueble(const int n);
 };
@@ -93,6 +94,67 @@ void cocina::eliminar_mueble(const int n) {
         pos = pared.siguiente(pos);
 
     pared.eliminar(pos);//simplemente eliminamos el mueble en esa posicion
+
+}
+
+void cocina::pegar_mueble(const int n) {
+    assert(n < muebles_colocados && n > 0);
+
+    size_t it = 0;
+    auto pos = pared.primera();
+
+    for(; pos != pared.fin() && it > n; pos = pared.siguiente(pos)){
+        it++;
+    }
+
+    if (pos == pared.anterior(pared.fin())){//Si esta en esa posicion entonces simplemente lo pegamos a la pared
+        pared.elemento(pos).posicion = 0;
+    }
+    else{//se pega al anterior
+        auto siguiente = pared.siguiente(pos);
+        pared.elemento(pos).posicion = pared.elemento(siguiente).anchura + pared.elemento(siguiente).posicion;
+    }
+
+}
+
+bool cocina::cabe(const mueble &m) {
+    assert(m.anchura + ocupado <= dimension);
+    bool token = false;
+    auto pos = pared.primera();
+    for(; pos != pared.fin() && m.posicion < pared.elemento(pos).posicion;
+         pos = pared.siguiente(pos));
+
+    if(pos != pared.fin()){
+
+        //caso mueble mas pegado a la pared
+        if ( pared.siguiente(pos) == pared.fin() ){
+            auto p_sig = pared.siguiente(pos);
+            if (pared.elemento(p_sig).posicion - m.anchura >= 0)
+                token = true;
+        }
+        else{//Caso general
+            auto p_sig = pared.siguiente(pos);
+            mueble m_sig;
+            m_sig = pared.elemento(p_sig);
+            if (pared.elemento(pos).posicion - (m_sig.posicion + m_sig.anchura) >= m.anchura )
+                token = true;
+        }
+
+    }
+
+    return token;
+}
+
+void cocina::insertar_mueble(const mueble &m) {
+
+    assert(cabe(m));
+
+    auto pos = pared.primera();
+    for(; pos != pared.fin() && m.posicion < pared.elemento(pos).posicion;
+    pos = pared.siguiente(pos));
+    pared.insertar(m,pos);
+    muebles_colocados++;
+    ocupado +=m.anchura;
 
 }
 

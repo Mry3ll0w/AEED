@@ -116,7 +116,9 @@
 				13,
 				14,
 				15,
-				16
+				16,
+				17,
+				18
 			]
 		}
 	],
@@ -208,6 +210,16 @@
 		{
 			"backtrace" : 1,
 			"path" : "cocina.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "tads_profesorado/listavec.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "hospital.h",
 			"sourceGroupIndex" : 1
 		}
 	],

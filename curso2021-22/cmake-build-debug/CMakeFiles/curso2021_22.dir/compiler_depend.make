@@ -164,7 +164,9 @@ CMakeFiles/curso2021_22.dir/main.cpp.obj: ../main.cpp \
   C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/ctime \
   C:/MinGW/include/time.h \
   ../texto_feb21.h \
-  ../cubilete.h
+  ../cubilete.h \
+  ../hospital.h \
+  ../tads_profesorado/listavec.h
 
 CMakeFiles/curso2021_22.dir/p3.cpp.obj: ../p3.cpp \
   ../p3.hpp \
@@ -495,6 +497,8 @@ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/ptr_traits.h:
 
 C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/debug/debug.h:
 
+../tads_profesorado/listavec.h:
+
 C:/MinGW/lib/gcc/mingw32/9.2.0/include/stdint.h:
 
 C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/bits/localefwd.h:
@@ -662,5 +666,7 @@ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/ctime:
 ../texto_feb21.h:
 
 ../cubilete.h:
+
+../hospital.h:
 
 ../tads_profesorado/ordenacion.cpp:
