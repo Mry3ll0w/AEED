@@ -118,7 +118,8 @@
 				15,
 				16,
 				17,
-				18
+				18,
+				19
 			]
 		}
 	],
@@ -220,6 +221,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "hospital.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "diccionario.h",
 			"sourceGroupIndex" : 1
 		}
 	],

@@ -3,15 +3,17 @@
 #include <iostream>
 #include <random>
 #include <string>
-#include <cassert>
+#include <cassert>//assert()
 #include <algorithm> //std::reverse
 #include <vector>
 template <class t>
 std::ostream& operator<<(std::ostream&os,PilaEnla<t>&p){
+
     while(!p.vacia()){
         os<<p.tope()<<" ";
         p.pop();
     }
+
     return os;
 }
 

@@ -10,25 +10,21 @@
 #include "cubilete.h"
 #include "hospital.h"
 #include "tads_profesorado/listavec.h"
-
+#include "diccionario.h"
 int main() {
 //srand(time(0));//SOLO DEBE SER LLAMADA UNA Única vez por mainº
 //solitario();
 //solitario_reyes();
+diccionario d;
+d.insertar_traduccion("book","libro");
 
-hospital h(3,2);
-paciente p = paciente("1230",5),p2 =paciente("1231",2),p3= paciente("1232",4),p4 = paciente("1233",3);
-h.ingresar_paciente(p);
-h.ingresar_paciente(p2);
-h.ingresar_paciente(p3);
-h.pacientes_uci();
-std::cout << std::endl;
-std::cout << std::endl;
-h.ingresar_paciente(p4);
-std::cout<<"Tras insercion"<<std::endl;
-h.pacientes_uci();
-std::cout << "pacientes planta "<<std::endl;
-h.pacientes_planta();
+d.insertar_traduccion("hello","hola");
+d.insertar_traduccion("hello","saludos");
+d.insertar_traduccion("hello","buenas");
+d.show_trad("hello");
+d.eliminar_traduccion_al_esp("hello","saludos");
+
+
 
 
 return 0;

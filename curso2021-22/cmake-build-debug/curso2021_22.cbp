@@ -92,6 +92,9 @@
 		<Unit filename="D:/Proyectos/AEED-/curso2021-22/cubilete.h">
 			<Option target="curso2021_22"/>
 		</Unit>
+		<Unit filename="D:/Proyectos/AEED-/curso2021-22/diccionario.h">
+			<Option target="curso2021_22"/>
+		</Unit>
 		<Unit filename="D:/Proyectos/AEED-/curso2021-22/ej4_parcial2022.h">
 			<Option target="curso2021_22"/>
 		</Unit>
