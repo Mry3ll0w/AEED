@@ -89,6 +89,9 @@
 		<Unit filename="D:/Proyectos/AEED-/curso2021-22/cocina.h">
 			<Option target="curso2021_22"/>
 		</Unit>
+		<Unit filename="D:/Proyectos/AEED-/curso2021-22/consultorio.h">
+			<Option target="curso2021_22"/>
+		</Unit>
 		<Unit filename="D:/Proyectos/AEED-/curso2021-22/cubilete.h">
 			<Option target="curso2021_22"/>
 		</Unit>
@@ -138,6 +141,9 @@
 			<Option target="curso2021_22"/>
 		</Unit>
 		<Unit filename="D:/Proyectos/AEED-/curso2021-22/texto_feb21.h">
+			<Option target="curso2021_22"/>
+		</Unit>
+		<Unit filename="D:/Proyectos/AEED-/curso2021-22/tren.h">
 			<Option target="curso2021_22"/>
 		</Unit>
 		<Unit filename="D:/Proyectos/AEED-/curso2021-22/CMakeLists.txt">

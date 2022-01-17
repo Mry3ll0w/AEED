@@ -119,7 +119,9 @@
 				16,
 				17,
 				18,
-				19
+				19,
+				20,
+				21
 			]
 		}
 	],
@@ -226,6 +228,16 @@
 		{
 			"backtrace" : 1,
 			"path" : "diccionario.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "consultorio.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "tren.h",
 			"sourceGroupIndex" : 1
 		}
 	],

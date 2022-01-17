@@ -167,7 +167,8 @@ CMakeFiles/curso2021_22.dir/main.cpp.obj: ../main.cpp \
   ../cubilete.h \
   ../hospital.h \
   ../tads_profesorado/listavec.h \
-  ../diccionario.h
+  ../diccionario.h \
+  ../tren.h
 
 CMakeFiles/curso2021_22.dir/p3.cpp.obj: ../p3.cpp \
   ../p3.hpp \
@@ -671,5 +672,7 @@ C:/MinGW/lib/gcc/mingw32/9.2.0/include/c++/ctime:
 ../hospital.h:
 
 ../diccionario.h:
+
+../tren.h:
 
 ../tads_profesorado/ordenacion.cpp:

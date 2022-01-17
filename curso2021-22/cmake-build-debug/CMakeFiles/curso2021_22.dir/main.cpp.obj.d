@@ -151,4 +151,5 @@ CMakeFiles/curso2021_22.dir/main.cpp.obj: \
  D:\Proyectos\AEED-\curso2021-22\cubilete.h \
  D:\Proyectos\AEED-\curso2021-22\hospital.h \
  D:\Proyectos\AEED-\curso2021-22\tads_profesorado/listavec.h \
- D:\Proyectos\AEED-\curso2021-22\diccionario.h
+ D:\Proyectos\AEED-\curso2021-22\diccionario.h \
+ D:\Proyectos\AEED-\curso2021-22\tren.h
