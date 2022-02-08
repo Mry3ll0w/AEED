@@ -13,6 +13,7 @@ struct funcion{
         return x == f.x && y == f.y;
     }
 };
+
 class Escalonada{
 private:
     ListaEnla<funcion>grafica;
