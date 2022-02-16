@@ -121,7 +121,8 @@
 				18,
 				19,
 				20,
-				21
+				21,
+				22
 			]
 		}
 	],
@@ -238,6 +239,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "tren.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "simbolo.h",
 			"sourceGroupIndex" : 1
 		}
 	],

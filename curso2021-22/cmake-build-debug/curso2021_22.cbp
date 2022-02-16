@@ -127,7 +127,14 @@
 		<Unit filename="C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/p6.h">
 			<Option target="curso2021_22"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/tads_profesorado/cronometro.h">
+=======
+		<Unit filename="D:/Proyectos/AEED-/curso2021-22/simbolo.h">
+			<Option target="curso2021_22"/>
+		</Unit>
+		<Unit filename="D:/Proyectos/AEED-/curso2021-22/tads_profesorado/cronometro.h">
+>>>>>>> 30e0f43c3008ec7cab97703c3829a05a4f15ed12
 			<Option target="curso2021_22"/>
 		</Unit>
 		<Unit filename="C:/Users/anton/OneDrive/Escritorio/AEED/curso2021-22/tads_profesorado/listavec.h">

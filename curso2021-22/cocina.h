@@ -93,6 +93,8 @@ void cocina::eliminar_mueble(const int n) {
     for(size_t i = 0; i < n && pos != pared.fin();++i )
         pos = pared.siguiente(pos);
 
+    ocupado -=pared.elemento(pos).anchura;
+
     pared.eliminar(pos);//simplemente eliminamos el mueble en esa posicion
 
 }

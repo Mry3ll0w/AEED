@@ -17,8 +17,8 @@ int main() {
 //srand(time(0));//SOLO DEBE SER LLAMADA UNA Única vez por mainº
 //solitario();
 //solitario_reyes();
-
-
+tren t;
+tren::vagon v;
 
 return 0;
 }
