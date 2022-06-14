@@ -123,6 +123,8 @@ bool cocina::cabe(const mueble &m) {
     assert(m.anchura + ocupado <= dimension);
     bool token = false;
     auto pos = pared.primera();
+
+    //Recorremos hasta encontrar donde deberia ser insertado el mueble
     for(; pos != pared.fin() && m.posicion < pared.elemento(pos).posicion;
          pos = pared.siguiente(pos));
 
