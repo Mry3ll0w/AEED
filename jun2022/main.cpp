@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "hospital.hpp"
+#include "consultorio.hpp"
 int main(){
     
     
