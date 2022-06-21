@@ -29,7 +29,6 @@ struct mueble {
         return posicion < b.posicion;
     }
 };
-
 class cocina{
 
 private:
@@ -63,7 +62,9 @@ public:
             auto p = l.primera();
             //pegar mueble a la izquierda
             l.elemento(p).posicion=0;//pegamos a la izq
-
+        }
+        else{
+            auto p = l.primera();
             for (;p != l.fin() && pos > 1 ; p = l.siguiente(p))
             {
                 auto p_ant = l.anterior(p);
@@ -71,9 +72,6 @@ public:
                 
                 pos--;
             }
-            
-
-
         }
         
     }
@@ -125,11 +123,11 @@ bool cocina::cabe(mueble m){
     assert(m.posicion >= 0 && m.anchura >= 1);
     
     //No  hay espacio para colocar el mueble
-    if (l.primera()==l.fin() && m.anchura >= restante)
+    if (l.primera()==l.fin() && m.anchura <= restante)
     {
         return true;
     }
-    else if (m.anchura >= restante)
+    else if (m.anchura > restante)//Hay algun mueble pero no hay espacio
     {
         return false;
     }
@@ -137,14 +135,14 @@ bool cocina::cabe(mueble m){
 
         auto pos = l.primera();
 
-        for (; pos != l.fin() && l.elemento(pos)<m; pos=l.siguiente(pos));
+        for (; pos != l.fin() && l.elemento(pos) < m; pos=l.siguiente(pos));
         //Caso 2: el mueble esta pegado a la pared
 
     
         //Buscamos si cabe en la posicion dada
         //caso mueble pegado a la pared (es decir cabe un mueble y la pared)
         
-        if (m.posicion == 0)//Pared izquierda
+        if (m.posicion == 0)//Pared derecha
         {
             mueble m_sig = l.elemento(pos);
             if(m_sig.posicion > m.anchura){// si la posicion del mueble izquierdo es mayor entonces cabe, ya que es lateral izquierdo
