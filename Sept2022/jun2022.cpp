@@ -10,15 +10,16 @@ typedef std::string codigo;
 struct Usuario{
     ColaDin<codigo> Normal,Prioridad;
     string ID;
-    bool operator==(const Usuario& other) const { return (ID == other.ID)}
+    bool operator==(const Usuario& other) const { return (ID == other.ID);}
+    bool operator!=(const Usuario& other) const { return !(*this == other); }
 };
 
 class Impresora{
     ColaDin<Usuario> c;
     int max_usuarios, ocupados;//Se debe hacer usando cola vect pero no tengo la implementacion
 public:
-    Impresora(int n):max_usuarios(n),libres(0) { }
-    void insertar_trabajo(const Usuario& u, const std::string & t,bool urgencia);
+    Impresora(int n):max_usuarios(n),ocupados(0) { }
+    void insertar_trabajo(Usuario& u, const std::string & t,bool urgencia);
     void eliminar_trabajo_a_imprimir();
     void cancelar_trabajos_usuario(const Usuario& u);
 };
@@ -28,7 +29,7 @@ int main(int argc, char **argv){
     return 0;
 }
 
-void Impresora::insertar_trabajo(const Usuario& u,cons std::string & t, bool urgencia){
+void Impresora::insertar_trabajo(Usuario& u,const std::string & i, bool urgencia){
     
 
     //Comprobamos que el usuario no exista
@@ -42,10 +43,10 @@ void Impresora::insertar_trabajo(const Usuario& u,cons std::string & t, bool urg
         if(ocupados < max_usuarios){
             ocupados ++;
             if(urgencia){
-                u.Prioridad.push(t);
+                u.Prioridad.push(i);
             }
             else{
-                u.Normal.push(t);
+                u.Normal.push(i);
             }
             c.push(u);
         }
@@ -64,10 +65,10 @@ void Impresora::insertar_trabajo(const Usuario& u,cons std::string & t, bool urg
         u = c.frente();//Metemos el elemento usuario, para obtener las colas
 
         if(urgencia){
-                u.Prioridad.push(t);
+                u.Prioridad.push(i);
         }
         else{
-            u.Normal.push(t);
+            u.Normal.push(i);
         }
         c.pop();//Sacamos el usuario buscado
         parser.push(u);

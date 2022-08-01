@@ -71,3 +71,4 @@
 *.code-workspace
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,c++,executable
+.vscode/c_cpp_properties.json
