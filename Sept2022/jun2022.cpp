@@ -161,7 +161,7 @@ public:
         //Yo por eficiencia lo paso directamente pero no se si a DLH le va a gustar
         red.elemento(p).tiene_token = true;
         red.elemento(p).T = T;
-
+    
     }
     
 };
