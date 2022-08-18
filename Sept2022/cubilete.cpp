@@ -24,6 +24,7 @@ Cubilete menor_cubilete(PilaEnla<Cubilete>& P){
 
     //Copiamos en la pila auxiliar la pila de cubiletes para no modificar la de entrada
     auto p_aux = P;
+
     while (!p_aux.vacia()){
 
         if(p_aux.tope().largo < menor.largo){
@@ -32,32 +33,29 @@ Cubilete menor_cubilete(PilaEnla<Cubilete>& P){
         
         p_aux.pop();
     }
-
+    
     //Podamos el elemento extraido de la pila
 
-    p_aux = P;//Reestablecemos la pila
-
+    
     PilaEnla<Cubilete> invierte, revierte;
 
-    while (!p_aux.vacia())
+    while (!P.vacia())
     {
 
-        if(p_aux.tope().largo != menor.largo ){
-            invierte.push(p_aux.tope());
+        if(P.tope().largo != menor.largo ){
+            invierte.push(P.tope());
         }
 
-        p_aux.pop();
+        P.pop();
     }
-
     //Al usar una pila los elementos estan en orden inverso, por tanto, usamos otra pila para recuperar
     //el orden inicial.
+    
     while(!invierte.vacia()){
 
         revierte.push(invierte.tope());
-
         invierte.pop();
-    } 
-
+    }
     //Tras corregir la inversion la asignamos a la pila original, la cual se queda podada
     P = revierte;
 
@@ -77,7 +75,7 @@ PilaEnla<Cubilete>ordena_Cubiletes(PilaEnla<Cubilete>& P){
 
     while(!p_aux.vacia()){
 
-        resultado.push(menor_cubilete(P));
+        resultado.push(menor_cubilete(p_aux));
 
     }
     
