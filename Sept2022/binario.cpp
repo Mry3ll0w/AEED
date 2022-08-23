@@ -102,7 +102,7 @@ public:
     }
 
     void desp_iz(const int& pos){
-        assert(pos <= n);
+        assert(pos <= n && pos > 0);
         //Primera
         auto i = l.primera();
         int it = 0;
@@ -123,7 +123,7 @@ public:
 
     void desp_der(const int& pos){
         
-        assert(pos <= n);
+        assert(pos <= n && pos > 0);
         // Primera
         auto i = l.primera();
         int it = 0;
