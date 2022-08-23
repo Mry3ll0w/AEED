@@ -100,7 +100,7 @@ int main(){
 
         cout << r.tope().largo <<endl;
 
-        r.pop();
+    r.pop();
     }
 
 return 0;
