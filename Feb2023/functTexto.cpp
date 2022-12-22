@@ -25,7 +25,7 @@ void mostrarTexto(Text texto);
 
 int main()
 {
-    string p1[] = {"Hola ", "que ", "tal#"}, p2[] = {"Yo ", "ess@@toy", "bii@en"};
+    string p1[] = {"Hola ", "que ", "tal#"}, p2[] = {"Yo ", " ess@@toy ", " bii@en"};
     Line l1(p1, 3), l2(p2, 3);
     Text t;
     t.insertar(l1, t.fin());
@@ -59,7 +59,31 @@ void mostrarTexto(Text texto)
         }
     }
 
-    // Mostramos las lineas del texto limpias
+    // Comprobamos ahora si existen @ dentro de cada una de las palbras del texto
+    for (auto l = textTrim.primera(); l != textTrim.fin(); l = textTrim.siguiente(l))
+    {
+
+        for (
+            auto p = textTrim.elemento(l).aWords.primera();
+            p != textTrim.elemento(l).aWords.fin();
+            p = textTrim.elemento(l).aWords.siguiente(p))
+        {
+            size_t iPosicionCaracter = textTrim.elemento(l).aWords.elemento(p).find('@');
+            if (iPosicionCaracter != string::npos) // Comprobamos ahora si existen @ dentro de la palabra
+            {
+                string sTrimmedWord;
+                for (size_t i = 0; i < textTrim.elemento(l).aWords.elemento(p).size(); i++)
+                {
+                    if (i != iPosicionCaracter && i != iPosicionCaracter - 1)
+                        sTrimmedWord += textTrim.elemento(l).aWords.elemento(p)[i];
+                }
+                // Tras eliminar el caracter sobrante copiamos la palabra "limpia"
+                textTrim.elemento(l).aWords.elemento(p) = sTrimmedWord;
+            }
+        }
+    }
+
+    // Mostramos las lineas del textTrim limpias
     for (auto l = textTrim.primera(); l != textTrim.fin(); l = textTrim.siguiente(l))
     {
         for (auto p = textTrim.elemento(l).aWords.primera();
