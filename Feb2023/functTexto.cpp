@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "../Sept2022/tads/ListaEnla.h"
+#include "../Sept2022/tads/pila_enla.h"
 using namespace std; // Avoid using std:: ....
 
 // Sabemos que en el texto no aparecen finales de linea, no hay /0
@@ -35,6 +36,44 @@ int main()
     return 0;
 }
 
+const string trimChar(const string &str)
+{
+    PilaEnla<char> stWord, stFinalWord;
+
+    string sTrimmed;
+    for (size_t i = 0; i < str.size(); ++i)
+    {
+
+        if (str[i] == '@' && str[i + 1] == '@')
+        {
+            stWord.pop(); // Sacamos el caracter anterior
+            stWord.push(str[i + 1]);
+            i++; // Nos saltamos el @
+        }
+        else if (str[i] == '@' && str[i + 1] != '@')
+        {
+            stWord.pop();
+            stWord.push(str[i + 1]);
+        }
+        else
+        {
+            stWord.push(str[i]);
+        }
+    }
+    while (!stWord.vacia())
+    {
+
+        stFinalWord.push(stWord.tope());
+        stWord.pop();
+    }
+    while (!stFinalWord.vacia())
+    {
+        sTrimmed += stFinalWord.tope();
+        stFinalWord.pop();
+    }
+    return sTrimmed;
+}
+
 void mostrarTexto(Text texto)
 {
     Text textTrim; // Guardamos las lineas que no tengan #
@@ -59,7 +98,7 @@ void mostrarTexto(Text texto)
         }
     }
 
-    // Comprobamos ahora si existen @ dentro de cada una de las palbras del texto
+    // Comprobamos ahora si existen @ dentro de cada una de las palbras del texto, las cuales ya han sido filtradas las lineas con #
     for (auto l = textTrim.primera(); l != textTrim.fin(); l = textTrim.siguiente(l))
     {
 
@@ -68,18 +107,15 @@ void mostrarTexto(Text texto)
             p != textTrim.elemento(l).aWords.fin();
             p = textTrim.elemento(l).aWords.siguiente(p))
         {
-            size_t iPosicionCaracter = textTrim.elemento(l).aWords.elemento(p).find('@');
-            if (iPosicionCaracter != string::npos) // Comprobamos ahora si existen @ dentro de la palabra
+            string sTrimmedWord, sWord = textTrim.elemento(l).aWords.elemento(p);
+            // Guardamos donde estan los @ localizados
+            ListaEnla<size_t> lPosChar;
+            for (int i = 0; i < sWord.size(); ++i)
             {
-                string sTrimmedWord;
-                for (size_t i = 0; i < textTrim.elemento(l).aWords.elemento(p).size(); i++)
-                {
-                    if (i != iPosicionCaracter && i != iPosicionCaracter - 1)
-                        sTrimmedWord += textTrim.elemento(l).aWords.elemento(p)[i];
-                }
-                // Tras eliminar el caracter sobrante copiamos la palabra "limpia"
-                textTrim.elemento(l).aWords.elemento(p) = sTrimmedWord;
+                if (sWord[i] == '@')
+                    lPosChar.insertar(i, lPosChar.fin());
             }
+            textTrim.elemento(l).aWords.elemento(p) = trimChar(sWord);
         }
     }
 
