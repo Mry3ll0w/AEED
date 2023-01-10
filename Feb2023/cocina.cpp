@@ -16,10 +16,11 @@ class Cocina
 {
     double dLongitudCocina_;
     double dLongitudOcupada_;
+    int iNumeroMuebles;
     ListaEnla<Mueble> lMuebles;
 
 public:
-    Cocina(const double &l) : dLongitudCocina_(l), dLongitudOcupada_(0)
+    Cocina(const double &l) : dLongitudCocina_(l), dLongitudOcupada_(0), iNumeroMuebles(0)
     {
         if (l <= 0)
             throw invalid_argument("el parametro l tiene que ser mayor que 0");
@@ -40,6 +41,12 @@ public:
         else
             throw runtime_error("El mueble no cabe en la posicion dada");
     }
+
+    Mueble muebleIesimo(int i);
+
+    void eliminarMuebleIesimo(int i);
+
+    void desplazarMuebleIesimo(int i);
 };
 
 int main()
@@ -114,5 +121,52 @@ pair<bool, ListaEnla<Mueble>::posicion> Cocina::cabeMueble(const double &pos, co
     else
     { // No hay espacio en la cocina por lo que no cabe
         return make_pair(false, lMuebles.fin());
+    }
+}
+
+Mueble Cocina::muebleIesimo(int i)
+{
+    if (i < 0 || i > iNumeroMuebles)
+        throw runtime_error("No hay tantos muebles en la cocina");
+
+    ListaEnla<Mueble>::posicion pMueble = lMuebles.primera();
+    while (i > 0 && pMueble != lMuebles.fin())
+    {
+        pMueble = lMuebles.siguiente(pMueble);
+        i--;
+    }
+    return lMuebles.elemento(pMueble);
+}
+
+void Cocina::eliminarMuebleIesimo(int i)
+{
+    if (i < 0 || i > iNumeroMuebles)
+        throw runtime_error("No hay tantos muebles en la cocina");
+
+    ListaEnla<Mueble>::posicion pMueble = lMuebles.primera();
+    while (i > 0 && pMueble != lMuebles.fin())
+    {
+        pMueble = lMuebles.siguiente(pMueble);
+        i--;
+    }
+    lMuebles.eliminar(pMueble);
+}
+
+void Cocina::desplazarMuebleIesimo(int i)
+{
+    Mueble m = muebleIesimo(i);
+    ListaEnla<Mueble>::posicion p = lMuebles.buscar(m);
+
+    if (p == lMuebles.fin())
+        throw runtime_error("No existe el mueble introducido");
+
+    if (p == lMuebles.primera())
+    { // El mueble es el primero, lo pegamos a la pared
+        lMuebles.elemento(p).dPosicion_ = 0;
+    }
+    else
+    {
+        Mueble muebleAnterior = lMuebles.elemento(lMuebles.anterior(p));
+        lMuebles.elemento(p).dPosicion_ = muebleAnterior.dAnchura_ + muebleAnterior.dPosicion_;
     }
 }
